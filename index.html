@@ -206,12 +206,60 @@
     </div>
   </section>
 
+  <!-- Section: Testimonial -->
+
+  <section class="section section-testimonial grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="carousel carousel-slider center">
+            <div class="carousel-item" href="#one!">
+              <h2>Testimonial 1</h2>
+              <p class="flow-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cumque delectus, sequi placeat vel officia illum eos obcaecati odit atque minus, maxime iusto provident omnis sed possimus deleniti nisi rerum?"
+                <p><em>- John Doe From Microsystems</em></p>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>  
+            </div>
+            <div class="carousel-item" href="#two!">
+              <h2>Testimonial 2</h2>
+              <p class="flow-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cumque delectus, sequi placeat vel officia illum eos obcaecati odit atque minus, maxime iusto provident omnis sed possimus deleniti nisi rerum?"
+                <p><em>- Mike Smith From Edge INC</em></p>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>  
+            </div>
+            <div class="carousel-item" href="#three!">
+              <h2>Testimonial 3</h2>
+              <p class="flow-text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cumque delectus, sequi placeat vel officia illum eos obcaecati odit atque minus, maxime iusto provident omnis sed possimus deleniti nisi rerum?"
+                <p><em>- Karen Williams From Tech Soft</em></p>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
       // Custom JS & jQuery here
+
+      // Initialize carousel
+
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
+
+      // Initialize side nav
+
+      $('.button-collapse').sideNav();
       
     });
   </script>

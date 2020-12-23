@@ -36,7 +36,7 @@
               <a href="signup.html">Sign Up</a>
             </li>
             <li>
-              <a class="btn purple" href="#">Login</a>
+              <a class="btn purple modal-trigger" href="#login-modal">Login</a>
             </li>
             <li>
               <a href="https://facebook.com">
@@ -273,6 +273,33 @@
     </div>
   </footer>
 
+  <!-- Login Modal -->
+
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Account Login</h4>
+      <p>Login To Acces Your Account Dashboard</p>
+      <form>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn grey">
+        <i class="fa fa-sync"></i> Reset Password
+      </a>
+      <a href="#!" class="modal-action modal-close btn purple">
+        <i class="fa fa-lock"></i> Login
+      </a>
+    </div>
+  </div>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -287,6 +314,10 @@
       // Initialize side nav
 
       $('.button-collapse').sideNav();
+
+      // Initialize login modal
+
+      $('.modal').modal();
       
     });
   </script>
